@@ -1,12 +1,16 @@
 import React from 'react'
 import { IoChevronBackOutline } from "react-icons/io5";
-
+import { Link } from 'react-router-dom'
 
 function Header(props) {
   const {name, canBack} = props
   return (
     <header className='flex-center'>
-      {canBack && (<IoChevronBackOutline />)}
+      {canBack && (
+        <Link to='/'>
+          <IoChevronBackOutline className='iconBack'/>
+        </Link>
+        )}
       <p>{name}</p>
       <div></div>
     </header>

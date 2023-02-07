@@ -4,10 +4,15 @@
 
 .list-country li {
   width: 50%;
+}
+
+.list-country li:nth-child(4n),
+.list-country li:nth-child(4n+1) {
   background-color: var(--color-primary);
 }
 
-.list-country li:nth-child(even) {
+.list-country li:nth-child(4n+2),
+.list-country li:nth-child(4n+3) {
   background-color: var(--color-primary-dark);
 }
 
@@ -24,20 +29,20 @@
   border-radius: 4px;
 }
 
-.country .detail {
+.country .detail-wrapper {
   width: 100%;
   align-items: flex-end;
   text-align: end;
-  padding-right: 8px;
+  padding-right: 16px;
 }
 
-.country .detail h4 {
+.country .detail-wrapper h4 {
   color: white;
   font-size: 1.2rem;
   font-weight: 500;
 }
 
-.country .detail p {
+.country .detail-wrapper p {
   color: white;
   font-size: 0.9rem;
   font-weight: 400;
