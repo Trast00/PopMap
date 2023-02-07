@@ -3,8 +3,9 @@ import { useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import DetailCountry from '../components/DetailCountry/DetailCountry'
 import Header from '../components/Header'
+import NotFound from './NotFound'
 
-function Detail(props) {
+function Detail() {
   const {topLevelDomain} = useParams()
 
   const listCountry = useSelector(state => state.countryReducer.listCountries)
@@ -14,8 +15,14 @@ function Detail(props) {
     const country = listCountry.filter(country=> (
       country.numericCode.toString() === topLevelDomain
     ))[0]
-    name = country.name
-    detailContent = (<DetailCountry country={country}/>)
+    if(country){
+      name = country.name
+      detailContent = (<DetailCountry country={country}/>)
+    } else {
+      //404
+      name = 'Error'
+      detailContent = (<NotFound />)
+    }
   }
   return (
     <div>
