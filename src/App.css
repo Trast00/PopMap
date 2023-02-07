@@ -13,6 +13,10 @@ body {
   --color-primary-dark: #cf4378;
 }
 
+a {
+  text-decoration: none;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;

@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import configureStore from './redux/configureStore';
 
-const store = configureStore
+const store = configureStore;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

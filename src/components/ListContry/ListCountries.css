@@ -14,7 +14,6 @@
 .country {
   width: 100%;
   min-height: 200px;
-  
   justify-content: space-evenly;
 }
 
@@ -33,11 +32,13 @@
 }
 
 .country .detail h4 {
+  color: white;
   font-size: 1.2rem;
   font-weight: 500;
 }
 
 .country .detail p {
+  color: white;
   font-size: 0.9rem;
   font-weight: 400;
 }

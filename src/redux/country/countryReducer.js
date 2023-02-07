@@ -1,22 +1,22 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 export const fetchData = createAsyncThunk(
-  "popmap/country/GET_DATA", 
+  'popmap/country/GET_DATA',
   async () => {
-    const result = await fetch("https://restcountries.com/v2/all")
-    const data = await result.json()
-    return data
-  }
-)
+    const result = await fetch('https://restcountries.com/v2/all');
+    const data = await result.json();
+    return data;
+  },
+);
 
 const countryReducer = createSlice({
-  name:"popmap/country/",
+  name: 'popmap/country/',
   initialState: [],
   reducers: {},
-  extraReducers :(builder) => {
-    builder.addCase(fetchData.fulfilled, 
-      (state, {payload}) => ({...state, listCountries:[...payload]}))
-  }
-})
+  extraReducers: (builder) => {
+    builder.addCase(fetchData.fulfilled,
+      (state, { payload }) => ({ ...state, listCountries: [...payload] }));
+  },
+});
 
 export default countryReducer.reducer;
