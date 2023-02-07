@@ -6,7 +6,7 @@
 
 body {
   color: white;
-  background-color: #ad3463;
+  background-color: #cc316d;
 
   --color-primary-ligth: #ec4c8a;
   --color-primary: #db4680;
@@ -49,6 +49,14 @@ a {
 }
 
 header {
+  font-size: 1.4rem;
   padding: 12px;
   justify-content: space-between;
+}
+
+header .iconBack {
+  position: absolute;
+  left: 12px;
+  top: 14px;
+  color: white;
 }

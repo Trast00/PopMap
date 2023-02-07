@@ -8,13 +8,6 @@ import "./ListCountries.css"
 function ListCountries() {
   const listCountry = useSelector(state => state.countryReducer.listCountries)
 
-  const dispatch = useDispatch()
-  useEffect(()=> {
-    if(!listCountry){
-      dispatch(fetchData())
-    }
-  }, [dispatch])
-
   return (
     <div className='max-width'>
       <ul className='max-width no-styling row list-country'>
