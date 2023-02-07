@@ -1,12 +1,10 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-const fetchData = createAsyncThunk(
+export const fetchData = createAsyncThunk(
   "popmap/country/GET_DATA", 
   async () => {
     const result = await fetch("https://restcountries.com/v2/all")
     const data = await result.json()
-
-    console.log(data)
     return data
   }
 )

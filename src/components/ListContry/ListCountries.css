@@ -2,14 +2,19 @@
   flex-wrap: wrap;
 }
 
-.list-country .country:nth-child(even) {
+.list-country li {
+  width: 50%;
+  background-color: var(--color-primary);
+}
+
+.list-country li:nth-child(even) {
   background-color: var(--color-primary-dark);
 }
 
 .country {
-  width: 50%;
+  width: 100%;
   min-height: 200px;
-  background-color: var(--color-primary);
+  
   justify-content: space-evenly;
 }
 

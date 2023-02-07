@@ -1,12 +1,14 @@
 import React from 'react'
 
-const Country = () => {
+const Country = (props) => {
+  const {country} = props
+  const {name, population, flags} = country
   return (
     <div className='flex-center column country'>
-      <img src='https://flagcdn.com/us.svg' alt="Country Images" />
+      <img src={flags.svg} alt={name + `Country Images`} />
       <div className="column detail">
-        <h4>United State of USA</h4>
-        <p>950</p>
+        <h4>{name}</h4>
+        <p>{population}</p>
       </div>
     </div>
   )
