@@ -13,6 +13,10 @@ body {
   --color-primary-dark: #cf4378;
 }
 
+a {
+  text-decoration: none;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -26,6 +30,18 @@ body {
 .column {
   display: flex;
   flex-direction: column;
+}
+
+.max-width {
+  width: 100%;
+  min-height: 300px;
+}
+
+.no-styling {
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
 }
 
 .App {
