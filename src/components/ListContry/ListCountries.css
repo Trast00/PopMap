@@ -1,0 +1,13 @@
+.list-country {
+  flex-wrap: wrap;
+}
+
+.list-country .country:nth-child(even) {
+  background-color: var(--color-primary-dark);
+}
+
+.country {
+  width: 50%;
+  min-height: 200px;
+  background-color: var(--color-primary);
+}
