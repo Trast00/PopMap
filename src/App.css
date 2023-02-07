@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-color: #ad3463;
+
+  --color-primary-ligth: #ec4c8a;
+  --color-primary: #db4680;
+  --color-primary-dark: #cf4378;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  text-align: center;
+}
+
+header {
+  padding: 12px;
+  justify-content: space-between;
+}
