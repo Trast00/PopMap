@@ -2,13 +2,18 @@ import renderer from 'react-test-renderer';
 import '@testing-library/jest-dom';
 import React from 'react';
 import { testListCountry } from './setupTests.js';
-import Country from '../components/ListContry/Country.jsx';
+import { Provider } from 'react-redux';
+import configureStore from '../redux/configureStore.js';
+import ListCountries from '../components/ListContry/ListCountries.jsx';
+import Home from '../pages/Home.jsx';
 
 describe('test render', () => {
-  test('Conutry should match snapshoot', () => {
+  test('Home should match snapshoot', () => {
     const tree = renderer.create(
       <React.StrictMode>
-        <Country country={testListCountry[0]} />
+        <Provider store={configureStore}>
+          <Home />
+        </Provider>
       </React.StrictMode>,
     ).toJSON();
 

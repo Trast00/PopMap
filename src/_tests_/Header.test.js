@@ -4,7 +4,7 @@ import React from 'react';
 import Header from '../components/Header.jsx';
 
 describe('test render', () => {
-  test('List Rocket should match snapshoot', () => {
+  test('Header should match snapshoot', () => {
     const tree = renderer.create(
       <React.StrictMode>
         <Header name="Home" canBack={false} />

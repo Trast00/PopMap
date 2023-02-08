@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test render List Rocket should match snapshoot 1`] = `
+exports[`test render App should match snapshoot 1`] = `
 <div
   className="App"
 />

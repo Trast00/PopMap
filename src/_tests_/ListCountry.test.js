@@ -7,7 +7,7 @@ import configureStore from '../redux/configureStore.js';
 import ListCountries from '../components/ListContry/ListCountries.jsx';
 
 describe('test render', () => {
-  test('List Rocket should match snapshoot', () => {
+  test('List Country should match snapshoot', () => {
     const tree = renderer.create(
       <React.StrictMode>
         <Provider store={configureStore}>

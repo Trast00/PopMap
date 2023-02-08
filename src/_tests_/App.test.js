@@ -16,7 +16,7 @@ const store = configureStore;
 fetchDataMock()
 
 describe('test render', () => {
-  test('List Rocket should match snapshoot', () => {
+  test('App should match snapshoot', () => {
     const tree = renderer.create(
       <React.StrictMode>
         <Provider store={store}>
