@@ -1,17 +1,38 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const Country = (props) => {
-  const {country, detailed} = props
-  const {name, population, flags} = country
+  const { country, detailed } = props;
+  const { name, population, flags } = country;
   return (
-    <div className='flex-center column country'>
-      <img src={flags.svg} alt={name + `Country Images`} />
+    <div className="flex-center column country">
+      <img src={flags.svg} alt={`${name}Country Images`} />
       <div className="column detail-wrapper">
         <h4>{name}</h4>
-        <p>{detailed && 'Citizens: '} {population}</p>
+        <p>
+          {detailed && 'Citizens: '}
+          {' '}
+          {population}
+        </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Country
+Country.defaultProps = {
+  country: {},
+  detailed: false,
+};
+
+Country.propTypes = {
+  country: PropTypes.shape({
+    name: PropTypes.string,
+    population: PropTypes.number,
+    flags: PropTypes.shape({
+      svg: PropTypes.string,
+    }),
+  }),
+  detailed: PropTypes.bool,
+};
+
+export default Country;

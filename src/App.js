@@ -14,7 +14,7 @@ const App = () => {
     if (!listCountry) {
       dispatch(fetchData());
     }
-  }, [dispatch]);
+  }, [dispatch, listCountry]);
   return (
     <div className="App">
       <Routes>

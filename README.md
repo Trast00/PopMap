@@ -20,7 +20,7 @@
 
 # 📖 PopMap <a name="about-project"></a>
 
-PopMap is a webapp that provides a visual representation of the population distribution on a map. With PopMap, users can explore population data for different countries and see how population is distributed across the world.
+PopMap is a webapp that provides a representation of the population distribution. With PopMap, users can explore data for different countries and see how population is distributed across the world.
 
 ## 🛠 Built With <a name="built-with"></a>
 
