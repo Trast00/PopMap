@@ -7,6 +7,8 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [📺 Presentation Video ](#-presentation-video-)
   - [💻 Getting Started ](#-getting-started-)
     - [Setup](#setup)
     - [Install](#install)
@@ -20,7 +22,9 @@
 
 # 📖 PopMap <a name="about-project"></a>
 
-PopMap is a webapp that provides a representation of the population distribution. With PopMap, users can explore data for different countries and see how population is distributed across the world.
+PopMap is a webapp that use Rest Country API to provides a representation of the population distribution. With PopMap, users can also explore data for different countries and access to more information like (regions, nativeName, area, capital ...).
+
+[Presentation video](https://www.loom.com/share/4c0c566b99ee4891a38eba5906bac634)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -40,6 +44,16 @@ PopMap is a webapp that provides a representation of the population distribution
 - **Highly responsive**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+[Live Demo Link](https://dev--grand-malabi-7ee7ff.netlify.app/)
+
+## 📺 Presentation Video <a name="live-demo"></a>
+[Presentation video](https://www.loom.com/share/4c0c566b99ee4891a38eba5906bac634)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
