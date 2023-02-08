@@ -1,8 +1,8 @@
 import renderer from 'react-test-renderer';
 import '@testing-library/jest-dom';
 import React from 'react';
-import { testListCountry } from './setupTests.js';
-import Country from '../components/ListContry/Country.jsx';
+import { testListCountry } from './setupTests';
+import Country from '../components/ListContry/Country';
 
 describe('test render', () => {
   test('Conutry should match snapshoot', () => {
@@ -14,4 +14,4 @@ describe('test render', () => {
 
     expect(tree).toMatchSnapshot();
   });
-})
+});

@@ -1,7 +1,7 @@
 import renderer from 'react-test-renderer';
 import '@testing-library/jest-dom';
 import React from 'react';
-import Header from '../components/Header.jsx';
+import Header from '../components/Header';
 
 describe('test render', () => {
   test('Header should match snapshoot', () => {
@@ -13,4 +13,4 @@ describe('test render', () => {
 
     expect(tree).toMatchSnapshot();
   });
-})
+});

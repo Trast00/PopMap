@@ -11,7 +11,7 @@ describe('test render', () => {
     const tree = renderer.create(
       <React.StrictMode>
         <Provider store={configureStore}>
-          <MemoryRouter initialEntries={['/test1']}>
+          <MemoryRouter initialEntries={['/test1020202']}>
             <Detail />
           </MemoryRouter>
         </Provider>

@@ -1,11 +1,9 @@
 import renderer from 'react-test-renderer';
 import '@testing-library/jest-dom';
 import React from 'react';
-import { testListCountry } from './setupTests.js';
 import { Provider } from 'react-redux';
-import configureStore from '../redux/configureStore.js';
-import ListCountries from '../components/ListContry/ListCountries.jsx';
-import Home from '../pages/Home.jsx';
+import configureStore from '../redux/configureStore';
+import Home from '../pages/Home';
 
 describe('test render', () => {
   test('Home should match snapshoot', () => {
@@ -19,4 +17,4 @@ describe('test render', () => {
 
     expect(tree).toMatchSnapshot();
   });
-})
+});
