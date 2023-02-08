@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test render Header should match snapshoot 1`] = `
+<header
+  className="flex-center"
+>
+  <p>
+    Home
+  </p>
+  <div />
+</header>
+`;

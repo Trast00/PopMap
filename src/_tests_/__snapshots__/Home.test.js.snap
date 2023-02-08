@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test render Home should match snapshoot 1`] = `
+<div
+  className="max-width"
+>
+  <header
+    className="flex-center"
+  >
+    <p>
+      Home
+    </p>
+    <div />
+  </header>
+  <div
+    className="max-width"
+  >
+    <ul
+      className="max-width no-styling row list-country"
+    >
+      <p
+        className="max-width flex-center"
+      >
+        Empty List
+      </p>
+    </ul>
+  </div>
+</div>
+`;
