@@ -16,7 +16,6 @@ function Detail() {
       country.numericCode.toString() === topLevelDomain
     ))[0];
     if (country) {
-      console.log('country is not null')
       name = country.name;
       detailContent = (<DetailCountry country={country} />);
     } else {

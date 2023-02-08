@@ -73,7 +73,6 @@ describe('test routes render', () => {
       </React.StrictMode>,
     )
 
-    console.log(screen)
     const pageTitle = screen.getByRole('heading')
     expect(pageTitle.textContent).toBe('Home page rendered')
   })
@@ -90,7 +89,6 @@ describe('test routes render', () => {
       </React.StrictMode>,
     )
 
-    console.log(screen)
     const pageTitle = screen.getByRole('heading')
     expect(pageTitle.textContent).toBe('Detail page rendered')
   })
@@ -107,7 +105,6 @@ describe('test routes render', () => {
       </React.StrictMode>,
     )
 
-    console.log(screen)
     const pageTitle = screen.getByRole('heading')
     expect(pageTitle.textContent).toBe('Not found 404 rendred')
   })
