@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test render List Rocket should match snapshoot 1`] = `
+<div
+  className="App"
+/>
+`;
+
+exports[`test render Test App render correctly after a mocked request 1`] = `
+<div
+  className="App"
+/>
+`;
