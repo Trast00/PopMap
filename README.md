@@ -22,9 +22,9 @@
 
 # 📖 PopMap <a name="about-project"></a>
 
-PopMap is a webapp that use Rest Country API to provides a representation of the population distribution. With PopMap, users can also explore data for different countries and access to more information like (regions, nativeName, area, capital ...).
+PopMap is a webapp that use Rest Country API to provides a representation of the population distribution. With PopMap, users can filter the list of country by continents and also explore data for different countries and access to more information like (regions, nativeName, area, capital ...).
 
-[Presentation video](https://www.loom.com/share/4c0c566b99ee4891a38eba5906bac634)
+[Presentation video](https://www.loom.com/share/c0cab485183545149d5f4eaf4ec1ffe5)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -50,7 +50,7 @@ PopMap is a webapp that use Rest Country API to provides a representation of the
 [Live Demo Link](https://dev--grand-malabi-7ee7ff.netlify.app/)
 
 ## 📺 Presentation Video <a name="live-demo"></a>
-[Presentation video](https://www.loom.com/share/4c0c566b99ee4891a38eba5906bac634)
+[Presentation video](https://www.loom.com/share/c0cab485183545149d5f4eaf4ec1ffe5)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

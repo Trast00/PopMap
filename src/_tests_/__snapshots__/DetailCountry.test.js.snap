@@ -5,7 +5,7 @@ exports[`test render List Rocket should match snapshoot 1`] = `
   className="max-width column detail"
 >
   <div
-    className="flex-center column country"
+    className="flex-center column country detail-country"
   >
     <img
       alt="test country 1Country Images"

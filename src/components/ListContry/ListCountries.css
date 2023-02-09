@@ -20,6 +20,7 @@
   width: 100%;
   min-height: 200px;
   justify-content: space-evenly;
+  position: relative;
 }
 
 .country img {
@@ -36,14 +37,41 @@
   padding-right: 16px;
 }
 
+.detail-country h4 {
+  font-size: 1.4rem;
+}
+
 .country .detail-wrapper h4 {
   color: white;
   font-size: 1.2rem;
   font-weight: 500;
 }
 
+.detail-country p {
+  font-size: 1rem;
+}
+
 .country .detail-wrapper p {
   color: white;
   font-size: 0.9rem;
   font-weight: 400;
+}
+
+.detail-country {
+  padding: 16px;
+  flex-direction: row;
+  background-color: var(--color-primary);
+}
+
+.detail-country .detail-wrapper {
+  align-items: flex-start;
+  text-align: start;
+  padding-left: 24px;
+}
+
+.icons-country {
+  color: white;
+  position: absolute;
+  top: 12px;
+  right: 12px;
 }
