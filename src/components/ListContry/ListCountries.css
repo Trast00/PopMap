@@ -37,10 +37,18 @@
   padding-right: 16px;
 }
 
+.detail-country h4 {
+  font-size: 1.4rem;
+}
+
 .country .detail-wrapper h4 {
   color: white;
   font-size: 1.2rem;
   font-weight: 500;
+}
+
+.detail-country p {
+  font-size: 1rem;
 }
 
 .country .detail-wrapper p {
@@ -55,18 +63,10 @@
   background-color: var(--color-primary);
 }
 
-.detail-country h4 {
-  font-size: 1.4rem;
-}
-
 .detail-country .detail-wrapper {
   align-items: flex-start;
   text-align: start;
   padding-left: 24px;
-}
-
-.detail-country p {
-  font-size: 1rem;
 }
 
 .icons-country {
