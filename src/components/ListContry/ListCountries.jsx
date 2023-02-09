@@ -6,24 +6,26 @@ import Country from './Country';
 import './ListCountries.css';
 
 function ListCountries() {
-  const indexCurrentContinents = useSelector((state) => state.countryReducer.indexCurrentContinents)
+  const indexCurrentContinents = useSelector(
+    (state) => state.countryReducer.indexCurrentContinents,
+  );
   const listCountry = useSelector((state) => state.countryReducer.listCountries);
 
-  let listFiltered = []
-  if(listCountry){
-    if(listContinents[indexCurrentContinents].name === "World"){
-      listFiltered = [...listCountry]
-    }else if (listContinents[indexCurrentContinents].name === "Rest of World"){
-      listFiltered = listCountry.filter(country=> 
-        (country.region !== "Africa"
-        && country.region !== "Americas"
-        && country.region !== "Asia"
-        && country.region !== "Europe"
-        && country.region !== "Oceania"
-        ))
-    }else {
-      listFiltered = listCountry.filter(country=> 
-        (listContinents[indexCurrentContinents].name === country.region))
+  let listFiltered = [];
+  if (listCountry) {
+    if (listContinents[indexCurrentContinents].name === 'World') {
+      listFiltered = [...listCountry];
+    } else if (listContinents[indexCurrentContinents].name === 'Rest of World') {
+      listFiltered = listCountry.filter((country) => (country.region !== 'Africa'
+        && country.region !== 'Americas'
+        && country.region !== 'Asia'
+        && country.region !== 'Europe'
+        && country.region !== 'Oceania'
+      ));
+    } else {
+      listFiltered = listCountry.filter(
+        (country) => (listContinents[indexCurrentContinents].name === country.region),
+      );
     }
   }
   return (
@@ -33,7 +35,7 @@ function ListCountries() {
           ? listFiltered.map((country) => (
             <li key={country.numericCode}>
               <Link to={`/${country.numericCode}`} className="no-style">
-                <Country country={country} detailed={false}/>
+                <Country country={country} detailed={false} />
               </Link>
             </li>
           ))

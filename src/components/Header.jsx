@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { IoChevronBackOutline } from 'react-icons/io5';
-import { BsFillMicFill } from "react-icons/bs";
-import { IoIosSettings } from "react-icons/io";
+import { BsFillMicFill } from 'react-icons/bs';
+import { IoIosSettings } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 
 function Header(props) {
@@ -13,11 +13,11 @@ function Header(props) {
         <Link to="/">
           <IoChevronBackOutline className="icons" />
         </Link>
-      ): <div />}
+      ) : <div />}
       <p>{name}</p>
       <div>
         <BsFillMicFill className="icons" />
-        <IoIosSettings className="icons"/>
+        <IoIosSettings className="icons" />
       </div>
     </header>
   );
