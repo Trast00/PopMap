@@ -1,0 +1,25 @@
+.sub-detail {
+  text-align: start;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.list-details li {
+  font-weight: 500;
+  background-color: #db4680;
+}
+
+.list-details li:nth-child(even) {
+  background-color: #cf4378;
+}
+
+.details {
+  width: 100%;
+  padding: 16px;
+  justify-content: space-between;
+}
+
+.detail .keys {
+  color: #89264c;
+}

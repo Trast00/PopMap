@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-color: #cc316d;
+
+  --color-primary-ligth: #ec4c8a;
+  --color-primary: #db4680;
+  --color-primary-dark: #cf4378;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.max-width {
+  width: 100%;
+  min-height: 300px;
+}
+
+.no-styling {
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
+.icons {
+  color: white;
+}
+
+.App {
+  text-align: center;
+}
+
+.header {
+  font-size: 1.4rem;
+  padding: 12px;
+  justify-content: space-between;
+}
+
+.header .icons {
+  font-size: 1.2rem;
+  margin-right: 12px;
+}
+
+.header p {
+  flex: 1;
+}
+
+.continent {
+  background-color: var(--color-primary);
+  min-height: 200px;
+}
+
+.continent .icons {
+  font-size: 1.8rem;
+  margin: 8px;
+  opacity: 0.6;
+}
+
+.continent .country img {
+  width: 70%;
+  max-height: 150px;
+  border: none;
+}

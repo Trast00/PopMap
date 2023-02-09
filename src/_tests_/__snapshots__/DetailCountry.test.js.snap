@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test render List Rocket should match snapshoot 1`] = `
+<div
+  className="max-width column detail"
+>
+  <div
+    className="flex-center column country detail-country"
+  >
+    <img
+      alt="test country 1Country Images"
+      src="test image url"
+    />
+    <div
+      className="column detail-wrapper"
+    >
+      <h4>
+        test country 1
+      </h4>
+      <p>
+        Citizens: 
+         
+        1000
+      </p>
+    </div>
+  </div>
+  <div
+    className="sub-detail"
+  >
+    COUNTRY DETAILS: 
+  </div>
+  <ul
+    className="list-details"
+  >
+    <li
+      className="row details"
+    >
+      <span
+        className="values"
+      >
+        test country 1
+      </span>
+      <span
+        className="keys"
+      >
+        name
+      </span>
+    </li>
+    <li
+      className="row details"
+    >
+      <span
+        className="values"
+      >
+        1000
+      </span>
+      <span
+        className="keys"
+      >
+        population
+      </span>
+    </li>
+    <li
+      className="row details"
+    >
+      <span
+        className="values"
+      >
+        test1
+      </span>
+      <span
+        className="keys"
+      >
+        numericCode
+      </span>
+    </li>
+  </ul>
+</div>
+`;
