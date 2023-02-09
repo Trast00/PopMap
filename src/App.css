@@ -44,26 +44,29 @@ a {
   background-color: transparent;
 }
 
+.icons {
+  color: white;
+}
+
 .App {
   text-align: center;
 }
 
-header {
+.header {
   font-size: 1.4rem;
   padding: 12px;
   justify-content: space-between;
 }
 
-header .iconBack {
-  position: absolute;
-  left: 12px;
-  top: 14px;
-  color: white;
+.header .icons {
+  font-size: 1.2rem;
+  margin-right: 12px;
 }
 
-.icons {
-  color: white;
+.header p {
+  flex: 1;
 }
+
 
 .continent {
   background-color: var(--color-primary);

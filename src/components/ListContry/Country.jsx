@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { BsArrowRightCircle } from "react-icons/bs";
 
 const Country = (props) => {
   const { country, detailed } = props;
@@ -7,6 +8,7 @@ const Country = (props) => {
   return (
     <div className={!detailed? "flex-center column country"
     :"flex-center column country detail-country"}>
+      {!detailed && <BsArrowRightCircle className='icons-country' />}
       <img src={flags.svg} alt={`${name}Country Images`} />
       <div className="column detail-wrapper">
         <h4>{name}</h4>

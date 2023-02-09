@@ -20,6 +20,7 @@
   width: 100%;
   min-height: 200px;
   justify-content: space-evenly;
+  position: relative;
 }
 
 .country img {
@@ -66,4 +67,11 @@
 
 .detail-country p {
   font-size: 1rem;
+}
+
+.icons-country {
+  color: white;
+  position: absolute;
+  top: 12px;
+  right: 12px;
 }
