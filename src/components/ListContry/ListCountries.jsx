@@ -14,7 +14,7 @@ function ListCountries() {
           ? listCountry.map((country) => (
             <li key={country.numericCode}>
               <Link to={`/${country.numericCode}`} className="no-style">
-                <Country country={country} />
+                <Country country={country} detailed={false}/>
               </Link>
             </li>
           ))

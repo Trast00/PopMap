@@ -3,9 +3,13 @@ import PropTypes from 'prop-types';
 
 const Country = (props) => {
   const { country, detailed } = props;
+  if(detailed){
+    console.log(country)
+  }
   const { name, population, flags } = country;
   return (
-    <div className="flex-center column country">
+    <div className={!detailed? "flex-center column country"
+    :"flex-center column country detail-country"}>
       <img src={flags.svg} alt={`${name}Country Images`} />
       <div className="column detail-wrapper">
         <h4>{name}</h4>

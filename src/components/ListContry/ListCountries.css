@@ -47,3 +47,23 @@
   font-size: 0.9rem;
   font-weight: 400;
 }
+
+.detail-country {
+  padding: 16px;
+  flex-direction: row;
+  background-color: var(--color-primary);
+}
+
+.detail-country h4 {
+  font-size: 1.4rem;
+}
+
+.detail-country .detail-wrapper {
+  align-items: flex-start;
+  text-align: start;
+  padding-left: 24px;
+}
+
+.detail-country p {
+  font-size: 1rem;
+}

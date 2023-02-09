@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import ListCountries from '../components/ListContry/ListCountries';
-import worldSvg from '../assets/world.svg';
+import Continent from '../components/Continent';
 
 const Home = () => (
   <div className="max-width">

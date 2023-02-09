@@ -60,3 +60,22 @@ header .iconBack {
   top: 14px;
   color: white;
 }
+
+.icons {
+  color: white;
+}
+
+.continent {
+  background-color: var(--color-primary);
+  min-height: 200px;
+}
+
+.continent .icons {
+  font-size: 1.8rem;
+  margin: 8px;
+}
+
+.continent .country img {
+  width: 70%;
+  border: none;
+}
