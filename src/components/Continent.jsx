@@ -1,19 +1,30 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
-import { listContinents } from '../redux/country/countryReducer'
+import { useDispatch, useSelector } from 'react-redux'
+import { listContinents, updateCurrentContinentIndex } from '../redux/country/countryReducer'
 import Country from './ListContry/Country'
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 
 
 const Continent = () => {
+  const dispatch = useDispatch()
   const indexCurrentContinents = useSelector(state => state.countryReducer.indexCurrentContinents)
+  const handleClick = (newIndex) => {
+    if(newIndex>=0 && newIndex<listContinents.length ){
+      dispatch(updateCurrentContinentIndex(newIndex))
+    }
+  }
   return (
     <div className='max-width flex-center continent'>
-      <FaArrowCircleLeft className='icons filter-back' />
-      {(indexCurrentContinents!==1) 
-      && <Country country={listContinents[0]} detailed={true} />
+      {(indexCurrentContinents>0) && 
+        <FaArrowCircleLeft className='icons filter-back' 
+        onClick={()=> {handleClick(indexCurrentContinents-1)}}/>
+      }
+
+      <Country country={listContinents[indexCurrentContinents]} detailed={true} />
+      {(indexCurrentContinents<listContinents.length-1) &&  
+        <FaArrowCircleRight className='icons filter-next' 
+        onClick={()=> {handleClick(indexCurrentContinents+1)}}/>
       }  
-      <FaArrowCircleRight className='icons filter-next' />
     </div>
   )
 }

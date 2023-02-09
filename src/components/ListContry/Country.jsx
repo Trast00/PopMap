@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 
 const Country = (props) => {
   const { country, detailed } = props;
-  if(detailed){
-    console.log(country)
-  }
   const { name, population, flags } = country;
   return (
     <div className={!detailed? "flex-center column country"

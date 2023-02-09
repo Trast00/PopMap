@@ -73,9 +73,11 @@ header .iconBack {
 .continent .icons {
   font-size: 1.8rem;
   margin: 8px;
+  opacity: 0.6;
 }
 
 .continent .country img {
   width: 70%;
+  max-height: 150px;
   border: none;
 }
